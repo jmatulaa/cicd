@@ -23,7 +23,7 @@ jobs:
           command: cd server && npm test
           working directory: ./server
  test_2:
-  executor:
+    executor:
       name: node/default
     steps:
       - checkout
