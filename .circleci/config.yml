@@ -11,7 +11,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: Build docker containers
-          command: docker-compose up-d
+          command: docker-compose up -d
       
   test_1:
     executor:
