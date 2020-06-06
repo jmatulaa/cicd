@@ -10,16 +10,16 @@ jobs:
       - node/install-packages:
           app-dir: ./server
       - run:
-          command: npm install
+          command: cd server && npm install 
           working directory: ./server
       - run: 
-          command: npm test
+          command: cd server && npm test
           working directory: ./server
       - run: 
-          command: npm install
+          command: cd client && npm install
           working directory: ./client
       - run: 
-          command: npm test
+          command: cd client && npm test
           working directory: ./client          
 workflows:
     build-and-test:
