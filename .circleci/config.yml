@@ -36,10 +36,10 @@ jobs:
 workflows:
     build-and-test:
       jobs:
-        -build
-        -test_1:
-           requires:
+         -build
+         -test_1:
+            requires:
               - build
-        -test_2:
-           requires:
+         -test_2:
+            requires:
               - build
